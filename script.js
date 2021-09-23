@@ -72,12 +72,11 @@ function createDivsForColors(colorArray) {
   
     clickCards++
     card2.style = `background-color : ${color}`
+    
     if(clickCards == 2){
-       
+     
       clickCards = 0;
-       
        if(card1.classList[0] !== card2.classList[0]){
-        console.log("Inside If condition");
         clrArray.push(setTimeout(function(){
         card1.style = `background-color :transparent`
         card2.style = `background-color :transparent`
@@ -106,5 +105,5 @@ const interValidColor = setInterval(function(){
   for(let letter of letters){
     letter.style.color = randomColor();
   }
-},1000)
+},500)
 
